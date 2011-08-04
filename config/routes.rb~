@@ -4,6 +4,21 @@ Finnish::Application.routes.draw do
 	match "/finlandia" => "site#finlandia"
 	match "/abc" => "site#abc"
 	match "/pronuncia" => "site#pronuncia"
+	match "/numeros" => "site#numeros"
+	match "/horas" => "site#horas"
+	match "/pronomes" => "site#pronomes"
+	match "/onde" => "site#onde"
+	match "/verboter" => "site#verboter"
+	match "/tipoverbo" => "site#tipoverbo"
+	match "/conjugacoes" => "site#conjugacoes"
+	match "/partitivo" => "site#partitivo"
+	match "/negativo" => "site#negativo"
+	match "/interrogativo" => "site#interrogativo"
+	match "/verboserter" => "site#verboserter"
+	match "/participio" => "site#participio"
+	match "/condicional" => "site#condicional"
+	match "/imperfeito" => "site#imperfeito"
+	
 	match "/contato" => "site#contato"
 	
 	

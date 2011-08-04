@@ -269,8 +269,17 @@ header {
 	height: 210px;
 	border: 1px solid black;
 	margin: 0 auto;
+	font-size: 36px;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	
 }
 
-header, h1 {
-	font-size: 36px;	
-}
+#main {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	line-height: 18px;	
+	}
+	
+#main, p {
+	text-indent: 3em;	
+	}
