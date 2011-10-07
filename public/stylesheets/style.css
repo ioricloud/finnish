@@ -259,7 +259,10 @@ a:hover { color: #036; }
   h2, h3{ page-break-after: avoid; }
 }
 
-@font-face { font-family: handsean; src: url('/public/fonts/handsean.ttf'); }
+@font-face {
+	font-family: 'handsean';
+	src: url('../public/fonts/handsean.ttf') format('truetype');
+	}
 
 #container {
 	width: 960px;
@@ -272,7 +275,7 @@ header {
 	border: 1px solid black;
 	margin: 0 auto;
 	font-size: 36px;
-	font-family: Verdana, Geneva, Arial, sans-serif;	
+	font-family: handsean, Verdana, Arial, sans-serif;	
 }
 
 #main {
