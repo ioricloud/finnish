@@ -1,3 +1,18 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	width: 960px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+header, footer, aside, section { display: block;}
+
 @font-face {
 	font-family: 'handsean';
 	src: url('../public/fonts/handsean.ttf') format('truetype');
@@ -11,42 +26,114 @@
 header {
 	width: 960px;
 	height: 210px;
-	border: 1px solid;
+	position: relative;
 	margin: 0 auto;
-	border-radius: 25px;
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;	
+	padding-top: 25px;	
 }
 
+hgroup { margin: 20px 0 40px;}
+
+hgroup h1 {
+	font: 100px/120px 'handsean', Verdana, Arial, sans-serif;
+	color: #000;
+	text-shadow: -1px -1px 0 #010, 0 0 10px rgba(255,255,255,0.7);
+	text-align: center;
+}
+
+/*
 header, h1 {
 	font-family: 'handsean', Verdana, Arial, sans-serif;
 	text-shadow: 0px 1px 1px rgba(0,0,0,.2);
 	font-size: 60px;
 	padding: 5px 0 0 5px;
+	margin: 0 auto;
+	text-indent: 10px;
 }
-
+*/
 nav {
-	margin: 0px 0px 30px 30px;
+	width: 77%;
+	height: 40px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	position: absolute;
 }
 
 nav, ul{
-	float: left;
-	width: 100%;
-	padding:0;
-	margin:5px 5px 25px 20px;
+	width: 960px;
+	margin:0 auto;
 	list-style-type:none;
+	list-style-position: outside;
+	list-style-image: none;
 }
 
 nav, ul, li {
-	display: inline;
+	float: left;
 }
 
-article {
-	font-size: 12px;
-	font-family: Verdana, Geneva, Arial, sans-serif;
-	line-height: 18px;	
-	}
+nav, ul, li, a{
+	margin-right: 20px;
+	display: block;
+	line-height: 40px;
+}
 	
-article, p {
-	text-indent: 3em;	
-	}
+footer {
+	background:#666666;
+	border-top:1px solid #cccccc;
+	padding:10px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+	border-radius:5px; // for Opera
+	text-align:center;
+	color:#ffffff;
+}
+
+h1 {
+	font-size: 16px;
+	line-height: 40px;
+	padding: 40px 0 5px 10px;
+}
+
+a {
+	color: #000;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+p {
+	text-align: justify;
+}
+
+#content {
+	display:table;
+	margin-top:40px;
+}
+
+#mcontent {
+	display:table-cell;
+	padding-right:22px;
+	width:620px;
+}
+
+.bpage div {
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	-moz-column-gap:22px;
+	-webkit-coulmn-gap:22px;
+}
+
+aside {
+	display:table-cell;
+	width:300px;
+	background:#f3f3f3;
+	float: right;
+}
+
+aside section {
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	background:#e0e0e0;
+	margin:22px 0 0 22px;
+	padding:11px 22px;
+	width:50%;
+}
