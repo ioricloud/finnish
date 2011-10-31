@@ -21,6 +21,12 @@ Finnish::Application.routes.draw do
 	match "/condicional" => "site#condicional"
 	match "/imperfeito" => "site#imperfeito"
 	match "/contato" => "site#contato"
+	match "/perfeito" => "site#perfeito"
+	match "/maisqueperfeito" => "site#maisqueperfeito"
+	match "/genitivo" => "site#genitivo"
+	match "/vocabulario" => "site#vocabulario"
+	match "/verbo" => "site#verbo"
+	match "/adjetivo" => "site#adjetivo"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

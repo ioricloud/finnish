@@ -13,17 +13,20 @@
   <meta name="author" content="Henrique Oliveira" >
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "bootstrap.min" %>
+  <%= stylesheet_link_tag "header" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %>
   
 </head>
 <body>
 	<div class="container">
-    	<header>
-				<hgroup>
-					<h1>Lingua Finlandesa</h1>
-				</hgroup>
-    	</header>
+		<div class="content">
+			<div class="page-header">
+    			<header>
+						<h1>Lingua Finlandesa</h1>
+
+    			</header>
+        	</div>
 		<nav>
 			<ul class="tabs">
 				<li class="active"><a href="#">Home1</a></li>
@@ -33,16 +36,20 @@
 			</ul>
 		</nav>
     	
-		<section>
+		<div class="row">
+			<div class="span10">
+				<section>
 
-    	<%= yield %>
+    				<%= yield %>
 
-		</section>
-
+				</section>
+			</div>
+		</div>
     	<footer>
 			<p>Copyleft © 2008 All Rights</p>
     	</footer>
     </div>
+	</div>
 
 </body>
 </html>
