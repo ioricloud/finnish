@@ -1,49 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
-  
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
-
   <title>Lingua Finlandesa</title>
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <meta name="description" content="Sobre lingua finlandesa">
   <meta name="author" content="Henrique Oliveira" >
   <%= stylesheet_link_tag "application" %>
-  <%= stylesheet_link_tag "bootstrap.min" %>
-  <%= stylesheet_link_tag "header" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tag %>
   
 </head>
 <body>
-	<div class="container">
-		<div class="content">
-			<div class="page-header">
-    			<header>
-						<h1>Lingua Finlandesa</h1>
-
-    			</header>
-        	</div>
+	<div id="wrap" class="clearfix">
+		<div class="col_12t">
+		<h1>Lingua Finlandesa</h1>
 		<nav>
 			<ul class="tabs">
-				<li class="active"><a href="#">Home1</a></li>
-				<li><a href="contato">Home2</a></li>
-				<li><a href="abc">Home3</a></li>
-				<li><a href="pronuncia">Home4</a></li>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="contato">Contato</a></li>
+				<li><a href="abc">ABC</a></li>
+				<li><a href="pronuncia">Pronuncia</a></li>
 			</ul>
 		</nav>
-    	
-		<div class="row">
-			<div class="span10">
-				<section>
 
     				<%= yield %>
 
-				</section>
-			</div>
 		</div>
     	<footer>
 			<p>Copyleft © 2008 All Rights</p>

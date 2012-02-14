@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Finnish::Application.config.secret_token = '74ce2fda480827bb6828d457f5b95a470b50b5aaadb427b922a30d71b3eaf4be8814f0bf4bd948c2481d45ea97de3d15571448cf0f6532408b391a075e89dea5'
+Finnish::Application.config.secret_token = 'd03c8bfcda3c826bc841fea609b81ccbb1a7c4284b3122fb588f69a4d1a436ccdf329982fc780ca1c3d0feb0f74980a3231dd3acedf20cbeae47330c8a60445d'
